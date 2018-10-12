@@ -1,21 +1,14 @@
-# insight-docker
+# docker-rest.bitcoin.com
 This repository contains a Dockerfile and bash shell scripts for building
-a Docker-based Bitpay Insight API server and bitcoin-abc v18.0 full node.
-This Dockerfile is based on
-[this gist](https://gist.github.com/christroutner/d43eebbe99e155b0558f97e450451124)
-walking through the setup of a BCH Insight server. At the moment, an Insight
-server is required by
-[rest.bitcoin.com](https://github.com/Bitcoin-com/rest.bitcoin.com)
-API server.
-
-Right now the Docker container targets BCH **testnet**. This repository may
-be expanded in the future to cover mainnet.
+a containerized version of [rest.bitcoin.com](https://github.com/Bitcoin-com/rest.bitcoin.com).
 
 ## Installation
 These directions are geared at Ubuntu 18.04 OS with at least 2GB of RAM,
-and a non-root user with sudo privledges.
-The testnet blockchain data takes up about 25GB of space.
-Your mileage may vary.
+and a non-root user with sudo privledges. Before installing this software, you
+need to have a [Wormhole node](https://github.com/christroutner/wormhole-docker)
+and [Insight server](https://github.com/christroutner/insight-docker) to connect
+it to. All three software must be targeted for either testnet or mainnet.
+
 
 1. It's always a good idea to add
 [swap space](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
