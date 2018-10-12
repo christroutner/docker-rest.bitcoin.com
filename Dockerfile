@@ -55,12 +55,12 @@ RUN npm install
 
 # Copy the config file.
 # EDIT THESE LINES TO REFLECT THE CONFIG FILE YOU WANT TO USE
-COPY config/start-mainnet /home/rest/rest.bitcoin.com/start-mainnet
-RUN sudo chmod 775 /home/rest/rest.bitcoin.com/start-mainnet
+#COPY config/start-mainnet /home/rest/rest.bitcoin.com/start-mainnet
+#RUN sudo chmod 775 /home/rest/rest.bitcoin.com/start-mainnet
+COPY config/start-testnet /home/rest/rest.bitcoin.com/start-testnet
+#RUN sudo chmod 775 /home/rest/rest.bitcoin.com/start-testnet
 
 
 # Startup bitcore, insight, and the full node.
-CMD ["/home/rest/rest.bitcoin.com/start-mainnet"]
-
-#COPY finalsetup finalsetup
-#ENTRYPOINT ["./finalsetup", "/home/insight/.npm-global/bin/bitcore", "start"]
+#CMD ["/home/rest/rest.bitcoin.com/start-mainnet"]
+CMD ["/home/rest/rest.bitcoin.com/start-testnet"]
