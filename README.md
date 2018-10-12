@@ -22,6 +22,17 @@ shows how to install Docker on a Ubuntu system.
 
 `git clone https://github.com/christroutner/insight-docker && cd insight-docker`
 
+* Create a BASH shell script for starting the server, based on the
+[example script file](config/start-example). Fill in the Wormhole node IP address
+and login info and the Insight server IP address. Edit the Dockerfile
+to use this file. Note: If you rename the file to either `start-testnet` or
+`start-mainnet` then it will not be saved to Git, thus not exposing the sensitive
+credential information.
+
+
+
+
+
 * Create a `blockchain-data` directory in your home directory:
 
 `mkdir ~/blockchain-data`
