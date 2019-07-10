@@ -1,0 +1,8 @@
+rest.bitcoin.com:
+  build: .
+  dockerfile: Dockerfile
+  #image: bitcore
+  container_name: rest.bitcoin.com
+  ports:
+    - "12500:3000"
+  restart: always
