@@ -8,7 +8,7 @@ export RPC_PASSWORD=password
 export ZEROMQ_PORT=28332
 #export ZEROMQ_URL=192.168.0.38
 export ZEROMQ_URL=172.17.0.1
-export NETWORK=mainnet
+export NETWORK=testnet
 
 # Insight API Server
 #export BITCOINCOM_BASEURL=http://192.168.0.36:13100/api/
