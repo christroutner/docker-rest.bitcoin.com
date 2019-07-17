@@ -38,11 +38,11 @@ EXPOSE 3000
 
 # Copy the config file.
 # EDIT THESE LINES TO REFLECT THE CONFIG FILE YOU WANT TO USE
-COPY config/start-mainnet.sh /home/safeuser/rest.bitcoin.com/start-mainnet.sh
-#COPY config/start-testnet.sh /home/safeuser/rest.bitcoin.com/start-testnet.sh
+#COPY config/start-mainnet.sh /home/safeuser/rest.bitcoin.com/start-mainnet.sh
+COPY config/start-testnet.sh /home/safeuser/rest.bitcoin.com/start-testnet.sh
 
 
 
 # Startup bitcore, insight, and the full node.
-CMD ["/home/safeuser/rest.bitcoin.com/start-mainnet.sh"]
-#CMD ["/home/safeuser/rest.bitcoin.com/start-testnet.sh"]
+#CMD ["/home/safeuser/rest.bitcoin.com/start-mainnet.sh"]
+CMD ["/home/safeuser/rest.bitcoin.com/start-testnet.sh"]
