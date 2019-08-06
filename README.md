@@ -30,7 +30,7 @@ credential information.
 
 - Customize the [Dockerfile](Dockerfile) to point to either testnet or mainnet.
 
-- Build the Docker images by running the 'build' shell script:
+- Build the Docker image by running:
 
 `docker-compose build --no-cache`
 
@@ -39,3 +39,21 @@ credential information.
 `docker-compose up -d`
 
 - You can now access the REST server at port `12500`.
+
+## Docker Debugging
+The following commands are useful for debugging applications like this one
+inside a Docker container. The commands below help you to enter a shell
+inside the container.
+
+* `docker ps -a`
+  * Show all docker processes, including ones that are stopped.
+
+* `docker container run --name test-container --rm -it <Image ID> bash`
+  * This command will run a docker container and drop you into a bash shell.
+  All you need is the image ID.
+
+* `docker exec -it <container ID> bash`
+  * This command will let you enter a bash shell inside a running Docker container.
+
+## License
+[MIT](LICENSE.md)
