@@ -1,7 +1,7 @@
 rest.bitcoin.com:
   build: .
   dockerfile: Dockerfile
-  #image: bitcore
+  #image: christroutner/rest.bitcoin.com-mainnet:1.0.0
   container_name: rest.bitcoin.com
   ports:
     - "12500:3000"
