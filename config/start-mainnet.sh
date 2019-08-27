@@ -13,6 +13,7 @@ export BITCOINCOM_BASEURL=http://192.168.0.36:12100/api/
 
 # SLPDB
 #export SLPDB_URL=https://slpdb.bchdata.cash/
-export SLPDB_URL=http://192.168.0.36:12300/
+#export SLPDB_URL=http://192.168.0.36:12300/
+export SLPDB_URL=http://192.168.0.6:12300/
 
 npm start
