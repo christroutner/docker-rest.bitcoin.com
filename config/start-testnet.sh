@@ -5,7 +5,7 @@
 export RPC_BASEURL=http://172.17.0.1:18332/
 export RPC_USERNAME=bitcoin
 export RPC_PASSWORD=password
-export ZEROMQ_PORT=28332
+export ZEROMQ_PORT=38332
 #export ZEROMQ_URL=192.168.0.38
 export ZEROMQ_URL=172.17.0.1
 export NETWORK=testnet

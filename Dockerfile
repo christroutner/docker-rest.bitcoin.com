@@ -29,7 +29,9 @@ WORKDIR /home/safeuser/rest.bitcoin.com
 # EDIT THE LINE ABOVE TO REFLECT THE BRANCH YOU WANT TO USE
 
 # Install dependencies
-RUN npm install
+#RUN npm install
+RUN npm install -g yarn
+RUN /home/safeuser/.npm-global/bin/yarn
 
 
 # Expose the port the API will be served on.
